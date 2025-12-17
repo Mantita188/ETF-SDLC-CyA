@@ -1,9 +1,9 @@
 name: CI/CD Pipeline
 on:
   push:
-    branches: [ "develop" ]
+    branches: [ "develop", "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "develop", "main" ]
 jobs:
   qa-security:
     runs-on: ubuntu-latest
