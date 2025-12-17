@@ -47,9 +47,9 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/evaluacion-qa:latest
+          tags: mantita188/evaluacion-qa:latest
       - name: Docker Scout (Escaneo de imagen)
         uses: docker/scout-action@v1
         with:
           command: quickview
-          image: ${{ secrets.DOCKER_USERNAME }}/evaluacion-qa:latest
+          image: mantita188/evaluacion-qa:latest
